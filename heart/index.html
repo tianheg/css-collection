@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart - tianheg</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+    <style>
+      .heart {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: pink;
+        height: 50px;
+        width: 50px;
+        transform: rotate(-45deg);
+      }
+      .heart::after {
+        background-color: pink;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        left: 25px;
+      }
+      .heart::before {
+        content: "";
+        background-color: pink;
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a class="active" href="#">Home</a>
+        </li>
+        <li>
+          <a href="./cards/index.html">Cards</a>
+        </li>
+        <li>
+          <a href="./moon/index.html">Moon</a>
+        </li>
+        <li>
+          <a href="./heart/index.html">Heart</a>
+        </li>
+        <li>
+          <a href="./credit-cards/index.html">Credit Cards</a>
+        </li>
+        <li>
+          <a href="./ribbons/index.html">Ribbons</a>
+        </li>
+        <li>
+          <a href="./isometric-layer/index.html">Isometric Layer</a>
+        </li>
+        <li>
+          <a href="happy-new-year.html">Happy New Year 2021</a>
+        </li>
+        <li style="float: right">
+          <a href="https://github.com/tianheg/css-collection">GitHub Repo</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="heart"></div>
+  </body>
+</html>
