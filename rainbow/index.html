@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS JS Collection - tianheg</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/nav.css" />
-  </head>
+    <title>Rainbow - tianheg</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+    <style>
+      div {
+        height: 40px;
+        width: 70%;
+        background: black;
+        margin: 50px auto;
+        border-radius: 5px;
+      }
 
+      #rect {
+        animation-name: rainbow;
+        animation-duration: 4s;
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-color: blue;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
   <body>
     <nav>
       <ul>
@@ -23,9 +45,6 @@
         </li>
         <li>
           <a href="./heart/index.html">Heart</a>
-        </li>
-        <li>
-          <a href="./rainbow/index.html">Rainbow</a>
         </li>
         <li>
           <a href="./credit-cards/index.html">Credit Cards</a>
@@ -44,9 +63,6 @@
         </li>
       </ul>
     </nav>
-
-    <main>
-      <p>A collection of HTML component designs using CSS and JavaScript.</p>
-    </main>
+    <div id="rect"></div>
   </body>
 </html>
