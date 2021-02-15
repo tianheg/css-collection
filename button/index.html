@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS JS Collection - tianheg</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/nav.css" />
-  </head>
+    <title>Button - tianheg</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+    <style>
+      button {
+        border-radius: 5px;
+        color: white;
+        background-color: #0f5897;
+        padding: 5px 10px 8px 10px;
+      }
 
+      button:hover {
+        animation-name: background-color;
+        animation-duration: 500ms;
+      }
+
+      @keyframes background-color {
+        100% {
+          background-color: #4791d0;
+        }
+      }
+    </style>
+  </head>
   <body>
     <nav>
       <ul>
         <li>
-          <a class="active" href="#">Home</a>
+          <a class="active" href="../index.html">Home</a>
         </li>
         <li>
           <a href="./cards/index.html">Cards</a>
@@ -23,9 +41,6 @@
         </li>
         <li>
           <a href="./heart/index.html">Heart</a>
-        </li>
-        <li>
-          <a href="./rainbow/index.html">Rainbow</a>
         </li>
         <li>
           <a href="./button/index.html">Button</a>
@@ -47,9 +62,6 @@
         </li>
       </ul>
     </nav>
-
-    <main>
-      <p>A collection of HTML component designs using CSS and JavaScript.</p>
-    </main>
+    <button>Register</button>
   </body>
 </html>
