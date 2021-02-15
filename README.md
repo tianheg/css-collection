@@ -1,4 +1,4 @@
-# css-collection
+# css-js-collection
 
 ## References
 
